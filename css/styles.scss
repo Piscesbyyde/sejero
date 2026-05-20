@@ -10,11 +10,11 @@ $link-decoration: none;
 
 // 4. Include any default map overrides here
 $custom-colors: (
-        "primary": #F5F1EB,
-        "secondary": #D6D0AA,
-        "info": #F6BCAB,
+        "60procent": #F5F1EB,
+        "30procent": #D6D0AA,
+        "menucolor": #F6BCAB,
         "textcolor": #3B2F23,
-        "CTAcolor": #9D5541,
+        "10procent": #9D5541,
 );
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
