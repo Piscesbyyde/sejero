@@ -10,7 +10,11 @@ $link-decoration: none;
 
 // 4. Include any default map overrides here
 $custom-colors: (
-	"farve": $cyan-400,
+        "primary": #F5F1EB,
+        "secondary": #D6D0AA,
+        "info": #F6BCAB,
+        "textcolor": #3B2F23,
+        "CTAcolor": #9D5541,
 );
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
@@ -18,3 +22,20 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 @import "bootstrapComponents";
 
 // 5. Du kan lave styling her...
+
+/* H1 */
+
+
+/* H2 */
+.ibm-plex-sans-condensed-thin {
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+/* P */
+.ibm-plex-sans-condensed-thin {
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
