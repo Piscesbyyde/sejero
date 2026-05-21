@@ -26,24 +26,30 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 // 5. Du kan lave styling her...
 
 /* H1 */
-.ibm-plex-sans-condensed-thin {
-  font-family: "IBM Plex Sans Condensed", sans-serif;
-  font-weight: 100;
+// <weight>: Use a value from 400 to 700
+.Overskrift {
+  font-family: "Baskervville", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
   font-style: normal;
+  font-size: 80px
 }
 
 /* H2 */
-.ibm-plex-sans-condensed-thin {
-  font-family: "IBM Plex Sans Condensed", sans-serif;
-  font-weight: 100;
+.Underoverskrift {
+  font-family: "Baskervville", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
   font-style: normal;
+  font-size: 40px;
 }
 
 /* P */
-.ibm-plex-sans-condensed-thin {
+.Brodtekst {
   font-family: "IBM Plex Sans Condensed", sans-serif;
   font-weight: 100;
   font-style: normal;
+  line-height: 30px;
 }
 
 .ikon {
