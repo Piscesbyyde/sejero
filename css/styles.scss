@@ -25,17 +25,25 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
 // 5. Du kan lave styling her...
 
-/* H1 */
+/* H1 desktop */
 // <weight>: Use a value from 400 to 700
 .Overskrift {
   font-family: "Baskervville", serif;
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
-  font-size: 80px
+  font-size: 72px
 }
 
-/* H2 */
+.OverskriftLP {
+  font-family: "Baskervville", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 72px
+}
+
+/* H2 desktop */
 .Underoverskrift {
   font-family: "Baskervville", serif;
   font-optical-sizing: auto;
@@ -44,10 +52,98 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
   font-size: 40px;
 }
 
-/* P */
+/* P desktop */
 .Brodtekst {
   font-family: "IBM Plex Sans Condensed", sans-serif;
   font-weight: 100;
   font-style: normal;
   line-height: 30px;
+  font-size: 16px;
+}
+
+/* Mobil (standard) */
+.Overskrift {
+  font-size: 2rem;
+}
+
+.Underoverskrift {
+  font-size: 1.5rem;
+}
+
+.Brodtekst {
+  font-size: 1rem;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .Overskrift {
+    font-size: 3rem;
+  }
+
+  .Underoverskrift {
+    font-size: 2rem;
+  }
+
+  .Brodtekst {
+    font-size: 1.1rem;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1200px) {
+  .Overskrift {
+    font-size: 4rem;
+  }
+
+  .OverskriftLP {
+    font-size: 6rem;
+  }
+
+  .Underoverskrift {
+    font-size: 2.5rem;
+  }
+
+  .Brodtekst {
+    font-size: 1.25rem;
+  }
+}
+
+.KarruselImg {
+  width: auto;
+  height: 550px;
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+  .KarruselImg {
+    width: auto;
+    height: 400px;
+  }
+}
+
+/* Mobil */
+@media (max-width: 767px) {
+  .KarruselImg {
+    width: 99%;
+    height: auto;
+  }
+}
+
+.wave-box {
+  background: #F5F1EB;
+  padding: 4rem;
+  border-radius: 50px;
+
+  clip-path: polygon(
+                  0% 2%, 10% 1%, 20% 2%, 30% 1%, 40% 2%,
+                  50% 1%, 60% 2%, 70% 1%, 80% 2%, 90% 1%, 100% 2%,
+
+                  99% 25%, 100% 50%, 99% 75%,
+
+                  99% 99%, 99% 99%, 70% 99%, 60% 98%,
+                  50% 99%, 40% 98%, 30% 99%, 20% 98%,
+                  10% 99%, 0% 98%,
+
+                  1% 75%, 0% 50%, 1% 5%
+  );
 }
