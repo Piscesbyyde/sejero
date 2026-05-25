@@ -129,6 +129,16 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
   }
 }
 
+.karrusel-box {
+  position: absolute;
+  left: 24%;
+  bottom: 10%;
+  background-color: #F5F1EB;
+  color: #3B2F23;
+  padding: 12px 24px;
+  min-width: 400px;
+}
+
 .wave-box {
   background: #F5F1EB;
   padding: 4rem;
