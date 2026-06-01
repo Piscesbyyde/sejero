@@ -12,9 +12,10 @@ $link-decoration: none;
 $custom-colors: (
         "60procent": #F5F1EB,
         "30procent": #D6D0AA,
-        "menucolor": #F6BCAB,
+        "menucolor": #FAD5CA,
         "textcolor": #3B2F23,
         "10procent": #9D5541,
+        "morkgron": #655F20,
 );
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
@@ -40,7 +41,7 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
-  font-size: 72px
+  font-size: 80px;
 }
 
 /* H2 desktop */
@@ -61,8 +62,12 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
   font-size: 16px;
 }
 
-/* Mobil (standard) */
+/* Mobil */
 .Overskrift {
+  font-size: 2rem;
+}
+
+.OverskriftLP {
   font-size: 2rem;
 }
 
@@ -77,6 +82,10 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 /* Tablet */
 @media (min-width: 768px) {
   .Overskrift {
+    font-size: 2.8rem;
+  }
+
+  .OverskriftLP {
     font-size: 3rem;
   }
 
@@ -175,4 +184,8 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
   display: block;
 }
 
+.Logo {
+  width: auto;
+  height: 90px;
+}
 
